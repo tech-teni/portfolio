@@ -85,6 +85,9 @@ i {
   color: rgb(168, 18, 131);
 }
 
+i:hover {
+  font-size: 20px;
+}
 .socials {
   height: 10%;
 }
