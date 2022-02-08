@@ -4,6 +4,7 @@ body {
   color: white;
   background-color: black;
   cursor: pointer;
+  font-size: 22px;
 }
 
 nav ul {
@@ -431,6 +432,40 @@ i {
 i:hover {
   font-size: 20px;
 }
+
+#about {
+  margin-top: 100px;
+  margin-bottom: 0px;
+}
+
+.liney {
+  width: 90px;
+  height: 5px;
+  background-color: rgb(168, 18, 131);
+  margin: auto;
+  margin-top: -40px;
+  border-radius: 5px;
+}
+
+.liney2 {
+  width: 130px;
+  height: 5px;
+  background-color: rgb(168, 18, 131);
+  margin: auto;
+  margin-top: -70px;
+  margin-bottom: 40px;
+  border-radius: 5px;
+}
+
+.liney3 {
+  width: 80px;
+  height: 5px;
+  background-color: rgb(168, 18, 131);
+  margin: auto;
+  margin-top: -70px;
+  margin-bottom: 40px;
+  border-radius: 5px;
+}
 @media screen and (min-width: 1024px) {
   .forGrid {
     display: flex;
@@ -451,7 +486,6 @@ i:hover {
 /* contact styling */
 
 .heading {
-  margin-top: 60px;
   padding: 2rem 0 0 2rem;
   display: flex;
   flex-direction: row;
@@ -474,7 +508,7 @@ i:hover {
   text-align: center;
   margin-top: 60px; */
   margin: auto;
-  width: 70%;
+  width: 90%;
   line-height: 1.3;
 }
 
@@ -505,6 +539,10 @@ i {
 .footer i {
   font-size: 30px;
   margin-left: 20px;
+}
+footer {
+  margin: auto;
+  margin-top: 30px;
 }
 
 @media screen and(min-width : 780px) {
