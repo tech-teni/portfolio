@@ -1,8 +1,0 @@
-const 
-
-
-
-
-document.addEventListener('load', () => {
-
-})

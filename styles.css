@@ -70,6 +70,7 @@ body:hover h1 {
   opacity: 1;
   transform: translateX(0);
 }
+
 #ganiyat {
   text-align: center;
   font-style: italic;
@@ -107,6 +108,47 @@ h4 {
   padding-bottom: 2rem;
   /* border-bottom: 2px solid rgb(168, 18, 131); */
   padding-bottom: 30px;
+}
+
+.projects-grid img {
+  width: 100%;
+  height: 250px;
+}
+.projects-grid a {
+  color: white;
+  text-decoration: none;
+  background: linear-gradient(
+    to right bottom,
+    rgba(102, 93, 93, 0.8),
+    rgba(129, 125, 125, 0.3)
+  );
+}
+
+.projects-grid a p:hover {
+  color: rgb(168, 18, 131);
+}
+/*  */
+
+.projects-grid a:hover p {
+  background: linear-gradient(
+    to right bottom,
+    rgba(0, 0, 0, 0.8),
+    rgba(0, 0, 0, 0.3)
+  );
+  display: inline-block;
+  padding: 0.8rem;
+  border-radius: 10px;
+}
+
+.projects-grid p {
+  background: linear-gradient(
+    to right bottom,
+    rgba(97, 96, 96, 0.8),
+    rgba(51, 51, 51, 0.3)
+  );
+  display: inline-block;
+  padding: 0.8rem;
+  border-radius: 10px;
 }
 
 .do {
