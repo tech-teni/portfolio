@@ -636,7 +636,7 @@ footer {
     font-size: 20px;
     margin-left: 10px;
   }
-  .projects-grid {
-    grid-template-columns: 1fr;
+  .habour {
+    flex-direction: column;
   }
 }
