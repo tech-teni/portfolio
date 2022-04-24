@@ -39,7 +39,7 @@ const Work = () => {
             trans="trans3"
             slide="slide3"
             i="fas fa-store-slash"
-            h4="E-COMMERCE"
+            h4="BACK-END"
             p="Maintaining relationship and conducting business transactions
             that include selling information, services, and goods by means
             of computer telecommunications networks."
