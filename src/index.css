@@ -639,4 +639,7 @@ footer {
   .habour {
     flex-direction: column;
   }
+  .projects-grid {
+    grid-template-columns: 1fr;
+  }
 }

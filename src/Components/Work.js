@@ -40,10 +40,8 @@ const Work = () => {
             slide="slide3"
             i="fas fa-store-slash"
             h4="BACK-END"
-            p="Maintaining relationship and conducting business transactions
-            that include selling information, services, and goods by means
-            of computer telecommunications networks."
-            bold="VScode, Github"
+            p="Collaborate with the front-end to integrate user-facing elements with server sidelogic and database application. Troubleshoot and debug application "
+            bold="With express, mongodb and Nodejs"
             house="house3"
           />
         </div>

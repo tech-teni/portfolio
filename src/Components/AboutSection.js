@@ -12,7 +12,7 @@ const AboutSection = () => {
         <div className="details">
           <p>
             Hello , I'm Ganiyat Yakub. My nickmane is <i>tech-teni</i>, a
-            Front-End web developer in Nigeria. I am a tech-enthusiast. I love
+            Full-stack web developer in Nigeria. I am a tech-enthusiast. I love
             to keep learning, continue challenging myself. I love combining the
             world of logic and creative design to make impressive , accessible,
             captivating and user-friendly websites and application. This is my
