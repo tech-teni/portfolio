@@ -5,11 +5,11 @@ const AboutSection = () => {
     <div>
       <h2 id="about">About</h2>
       <div className="liney"></div>
-      <section className="forGrid">
-        <div className="img-container">
+      <section className="forGrid ">
+        <div className="img-container ">
           <img src="img/teni.JPG" alt="" id="picture" />
         </div>
-        <div className="details">
+        <div className="details ">
           <p>
             Hello , I'm Ganiyat Yakub. My nickmane is <i>tech-teni</i>, a
             Full-stack web developer in Nigeria. I am a tech-enthusiast. I love

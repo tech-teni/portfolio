@@ -5,6 +5,79 @@ body {
   background-color: black;
   cursor: pointer;
   font-size: 22px;
+  position: relative;
+}
+.mobile-menu {
+  background: linear-gradient(
+      to right bottom,
+      rgba(102, 93, 93, 0.8),
+      rgba(129, 125, 125, 0.3)
+    ),
+    linear-gradient(to right bottom, rgba(12, 12, 12, 0.8), rgba(0, 0, 0, 0.3)),
+    linear-gradient(
+      to right bottom,
+      rgba(102, 93, 93, 0.8),
+      rgba(129, 125, 125, 0.3)
+    ),
+    linear-gradient(
+      to right bottom,
+      rgba(102, 93, 93, 0.8),
+      rgba(129, 125, 125, 0.3)
+    );
+  width: 40%;
+  height: 100vh;
+  position: fixed;
+  right: 0;
+  top: 60px;
+  font-size: large;
+}
+.mobile-menu ul li {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.mobile-menu ul li a {
+  margin-left: 10px;
+}
+.mobile-menu ul li i {
+  color: white;
+}
+nav {
+  background-color: rgb(168, 18, 131);
+  position: fixed;
+  top: 0;
+  left: o;
+  z-index: 2;
+  margin: 0;
+  width: 100%;
+  height: 60px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+nav div {
+  margin-left: 2rem;
+}
+nav div p {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 15px;
+  margin-top: 15px;
+}
+.logo-holder {
+  justify-content: space-between;
+}
+nav div p span {
+  font-size: large;
+  font-weight: bold;
+  /* font-size: 20px; */
+}
+.logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 nav ul {
@@ -12,16 +85,8 @@ nav ul {
   flex-direction: row;
   justify-content: flex-end;
   margin-right: 2rem;
-  background-color: rgb(168, 18, 131);
   margin-top: 0px;
-  width: 100%;
-  height: 60px;
-  margin: 0;
-  position: fixed;
-  top: 0;
-  left: o;
   font-size: 1.1rem;
-  z-index: 2;
 }
 
 ul a {
@@ -37,6 +102,9 @@ ul li {
   list-style-type: none;
   margin-top: 20px;
   margin-right: 70px;
+}
+.mobile {
+  display: none;
 }
 .bold {
   color: rgb(168, 18, 131);
@@ -69,7 +137,7 @@ body h1 {
   font-style: italic;
   font-size: 1.35rem;
   color: rgb(168, 18, 131);
-  margin-top: -35px;
+  margin-top: -12px;
   animation: slideInFromLeft 1s ease-in;
 
   /* opacity: 0; */
@@ -168,6 +236,8 @@ h4 {
   height: 5rem;
   font-size: 2rem;
   margin-top: 0;
+  margin-bottom: 0;
+
   /* border-radius: ; */
   text-align: center;
 }
@@ -368,6 +438,11 @@ h2 {
 }
 
 /* Media  Query*/
+@media screen and (min-width: 450px) {
+  .mobile-menu {
+    display: none;
+  }
+}
 
 @media screen and (min-width: 780px) {
   .projects-grid {
@@ -448,7 +523,7 @@ h2 {
 .img-container {
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: flex-start;
 }
 #picture {
   height: 400px;
@@ -495,7 +570,7 @@ i:hover {
   height: 5px;
   background-color: rgb(168, 18, 131);
   margin: auto;
-  margin-top: -40px;
+  margin-top: -15px;
   border-radius: 5px;
 }
 
@@ -504,7 +579,7 @@ i:hover {
   height: 5px;
   background-color: rgb(168, 18, 131);
   margin: auto;
-  margin-top: -70px;
+  margin-top: -20px;
   margin-bottom: 40px;
   border-radius: 5px;
 }
@@ -514,15 +589,15 @@ i:hover {
   height: 5px;
   background-color: rgb(168, 18, 131);
   margin: auto;
-  margin-top: -70px;
+  margin-top: -20px;
   margin-bottom: 40px;
   border-radius: 5px;
 }
+.forGrid {
+  display: grid;
+  grid-template-columns: 40% 60%;
+}
 @media screen and (min-width: 1024px) {
-  .forGrid {
-    display: flex;
-    flex-direction: row;
-  }
   #picture {
     height: 400px;
     width: 90%;
@@ -596,6 +671,10 @@ footer {
   margin: auto;
   margin-top: 30px;
 }
+footer p {
+  color: dimgrey;
+  text-align: center;
+}
 
 @media screen and(min-width : 780px) {
   .paragraphs {
@@ -607,7 +686,12 @@ footer {
     width: 50%;
   }
 }
-
+@media screen and (max-width: 1028px) {
+  .forGrid {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+}
 @media screen and (max-width: 700px) {
   .email {
     display: flex;
@@ -625,7 +709,12 @@ footer {
   }
 }
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 440px) {
+  .cover,
+  .cover2,
+  .cover3 {
+    width: 80vw;
+  }
   body {
     font-size: small;
   }
@@ -641,5 +730,29 @@ footer {
   }
   .projects-grid {
     grid-template-columns: 1fr;
+  }
+  nav ul {
+    display: none;
+  }
+  .mobile {
+    display: block;
+    margin-right: 2rem;
+    font-size: 20px;
+    font-weight: bold;
+  }
+  nav div {
+    margin-left: 0.5rem;
+  }
+  .logo {
+    font-size: 12px;
+  }
+  .nav div p span {
+    font-size: 12px;
+  }
+  .welcome-section h1 {
+    font-size: 35px;
+  }
+  #ganiyat {
+    font-size: 18px;
   }
 }

@@ -3,7 +3,7 @@ import MiniServices from "./MiniServices";
 
 const Work = () => {
   return (
-    <div>
+    <div className="">
       <section className="work">
         <h2 className="do">Services</h2>
         <div className="liney2"></div>

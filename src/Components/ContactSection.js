@@ -24,7 +24,7 @@ const ContactSection = () => {
               <i className="fas fa-envelope"></i> yakubganiyat247@gmail.com{" "}
             </span>
             <span>
-              <i className="fas fa-phone"></i> 09099758749
+              <i className="fas fa-phone"></i> 08114618720, 09099758749
             </span>
           </div>
         </div>
